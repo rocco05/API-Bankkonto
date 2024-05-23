@@ -2,11 +2,11 @@
 Det här projektet är en Python-applikation som simulerar en enkel ATM-maskin där användare kan skapa bankkonton, sätta in pengar, ta ut pengar, kontrollera sitt saldo och radera sina konton. Programmet använder objektorienterad programmering och implementerar abstrakta klasser för att hantera olika typer av bankkonton. Denna applikation är perfekt för nybörjare som vill lära sig om OOP i Python och hur man skapar en interaktiv terminalapplikation.
 
 ## Table of Contents
-Installation.
-Usage.
-Features.
-Contact.
-Acknowledgments.
+### Installation
+### Usage
+### Features
+### Contact
+### Acknowledgments
 
 ## Installation
 Följ dessa steg för att installera projektet lokalt:
@@ -32,7 +32,6 @@ I terminalen, kör programmet:
 python Bankkonto.py
 
 ## Usage
-python
 När du kör programmet kommer huvudmenyn att visas där du kan välja att skapa ett konto, sätta in pengar, ta ut pengar, kontrollera saldo eller radera ett konto.
 Så här ser det ut om man kör koden:
 ATM Menu:
