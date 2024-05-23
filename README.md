@@ -25,7 +25,7 @@ Navigera till den klonade mappen och klicka på Select Folder.
 Kopiera kod
 pip install -r requirements.txt
 Om du inte har en requirements.txt-fil kan du skapa en baserat på dina beroenden. För detta projekt är det oftast tomt om inga ytterligare bibliotek används:
-# requirements.txt
+requirements.txt
 
 4. Kör programmet:
 I terminalen, kör programmet:
