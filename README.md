@@ -1,29 +1,40 @@
-Bankkonto ATM-simulator
+# Bankkonto ATM-simulator
+Det här projektet är en Python-applikation som simulerar en enkel ATM-maskin där användare kan skapa bankkonton, sätta in pengar, ta ut pengar, kontrollera sitt saldo och radera sina konton. Programmet använder objektorienterad programmering och implementerar abstrakta klasser för att hantera olika typer av bankkonton. Denna applikation är perfekt för nybörjare som vill lära sig om OOP i Python och hur man skapar en interaktiv terminalapplikation.
 
-Introduktion
-Den här Python-applikationen simulerar en enkel ATM-maskin där användare kan skapa bankkonton, sätta in pengar, ta ut pengar, kontrollera sitt saldo och radera sina konton. Applikationen använder objektorienterad programmering och implementerar abstrakta klasser för att hantera olika typer av bankkonton.
-
-Funktioner
-Skapa konto: Användare kan skapa nya bankkonton med ett startbelopp.
-Insättning: Användare kan sätta in pengar på sina konton.
-Uttag: Användare kan ta ut pengar från sina konton.
-Kontrollera saldo: Användare kan kontrollera sitt kontosaldo.
-Radera konto: Användare kan radera sina konton.
-
-Krav
-Python 3.12.x
-
+## Table of Contents
 Installation
-Klona eller ladda ner detta repository till din lokala maskin.
-Navigera till katalogen där filerna finns.
+Usage
+Features
+Contact
+Acknowledgments
 
-Användning
-Kör följande kommando i din terminal eller kommandotolk för att starta applikationen:
+## Installation
+Följ dessa steg för att installera projektet lokalt:
+1. Klona repositoryt med GitHub Desktop:
+Öppna GitHub Desktop.
+Klicka på File > Clone repository.
+Ange URL: https://github.com/rocco05/Bankkonto.py
+Välj lokal sökväg och klicka på Clone.
 
-Huvudmeny
-När du kör programmet kommer huvudmenyn att visas. Följ instruktionerna på skärmen för att navigera genom de olika funktionerna i ATM-simulatorn.
+2. Öppna projektet i Visual Studio Code:
+Öppna Visual Studio Code.
+Klicka på File > Open Folder.
+Navigera till den klonade mappen och klicka på Select Folder.
 
+3. Installera beroenden:
+Kopiera kod
+pip install -r requirements.txt
+Om du inte har en requirements.txt-fil kan du skapa en baserat på dina beroenden. För detta projekt är det oftast tomt om inga ytterligare bibliotek används:
+# requirements.txt
 
+4. Kör programmet:
+I terminalen, kör programmet:
+python Bankkonto.py
+
+## Usage
+python
+När du kör programmet kommer huvudmenyn att visas där du kan välja att skapa ett konto, sätta in pengar, ta ut pengar, kontrollera saldo eller radera ett konto.
+Så här ser det ut om man kör koden:
 ATM Menu:
 1. Create Account
 2. Deposit
@@ -33,46 +44,19 @@ ATM Menu:
 6. Exit
 Enter your choice:
 
-Klassbeskrivningar
-BankAccount (Abstrakt klass)
-banks: En lista över tillgängliga banker.
-next_bank_id: En statisk variabel som håller koll på nästa unika bank-ID.
-balance: En statisk variabel för att simulera kontobalans.
-__init__(self, initial_balance): Initierar ett nytt bankkonto med ett startbelopp.
-check_out_banks(self, amount): Abstrakt metod för uttag.
-return_banks(self, amount): Abstrakt metod för insättning.
-get_balance(self): Returnerar kontots saldo.
-set_balance(self, new_balance): Sätter ett nytt saldo.
-get_bank_id(self): Returnerar kontots unika ID.
-delete_account(self): Raderar kontot.
-bank_exists(cls, bank_name): Kontrollerar om en bank finns i listan över banker.
-SavingsAccount (ärver BankAccount)
-__init__(self, initial_balance): Initierar ett nytt sparkonto med ett startbelopp.
-check_out_banks(self, amount): Hanterar uttag från kontot.
-return_banks(self, amount): Hanterar insättning på kontot.
-delete_account(self): Raderar sparkontot.
-ATM
-__init__(self): Initierar en lista över konton.
-create_account(self): Skapar ett nytt konto.
-find_account(self): Hittar ett konto baserat på användarens konto-ID.
-deposit(self): Hanterar insättning på ett konto.
-withdraw(self): Hanterar uttag från ett konto.
-check_balance(self): Visar saldot på ett konto.
-delete_account(self): Raderar ett konto.
-run(self): Kör huvudmenyn och hanterar användarens val.
-
-Exempel
-När programmet körs kan användaren skapa ett konto, sätta in pengar, ta ut pengar, kontrollera saldo och radera sitt konto. Nedan följer ett exempel på hur användaren kan interagera med programmet:
-1. Användaren startar programmet och väljer att skapa ett nytt konto och bestämmer hur mycket man vill ha på sitt konto.
-2. Användaren väljer att sätta in pengar på kontot.
-3. Användaren tar ut så mycket pengar som man vill.
-4. Användaren kontrollerar sitt saldo.
-5. Användaren väljer att radera sitt konto.
-6. Användaren avslutar sin ATM.
+## Features
+Lista över de viktigaste funktionerna i projektet och en beskrivning av vad som gör ditt projekt unikt:
+1. Skapa konto: Användare kan skapa nya bankkonton med ett startbelopp.
+2. Insättning: Användare kan sätta in pengar på sina konton.
+3. Uttag: Användare kan ta ut pengar från sina konton.
+4. Kontrollera saldo: Användare kan kontrollera sitt kontosaldo.
+5. Radera konto: Användare kan radera sina konton.
 
 
+## Contact
+Linus Sundell- LinkedIn 
 
+Projektlänk: https://github.com/rocco05/API-Bankkonto/edit/main/Bankkonto.py
 
-
-
-
+## Acknowledgments
+API lärdom och programmering
